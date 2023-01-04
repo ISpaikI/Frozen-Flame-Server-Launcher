@@ -16,8 +16,9 @@ How to use:
 2. Press "install/update server" button
 3. Change the settings like you want them and save them
 4. Open the ports you saved in windows firewall (button) and your router
-5. Press "start server" button
-6. If the game gets an update just close the server and update it with the "install/update server" button
+   Important: you should have knowledge what you are doing by openening ports
+6. Press "start server" button
+7. If the game gets an update just close the server and update it with the "install/update server" button
 
 
 IMPORTANT:
