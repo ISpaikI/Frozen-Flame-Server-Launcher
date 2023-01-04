@@ -15,7 +15,7 @@ How to use:
 1. Press "install steamcmd" button
 2. Press "install/update server" button
 3. Change the settings like you want them and save them
-4. Open the ports you saved in windows firewall (button) and your router
+4. Open the ports you saved in windows firewall (button) and your router.
    Important: you should have knowledge what you are doing by openening ports
 6. Press "start server" button
 7. If the game gets an update just close the server and update it with the "install/update server" button
