@@ -404,11 +404,15 @@ namespace Frozen_Flame_Server_Launcher
                 string value11 = easyanticheat.Checked.ToString();
                 string value12 = " -NoEAC";
                 if (value5 == value6)
+                    { 
                     value7 = iniFile.GetValue("", "ServerPassword");
                     value4 = " -ServerPassword=" + value7;
+                    }
                 if (value8 == value6)
+                    {
                     value9 = iniFile.GetValue("", "RconPassword");
                     value10 = " -RconPassword=" + value9;
+                    }
                 if (value11 == value6)
                     value12 = "";
 

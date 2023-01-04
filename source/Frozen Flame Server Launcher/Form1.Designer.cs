@@ -857,7 +857,7 @@
             // 
             this.DurationOfDayInput.Location = new System.Drawing.Point(277, 503);
             this.DurationOfDayInput.Maximum = new decimal(new int[] {
-            3600,
+            9999,
             0,
             0,
             0});
@@ -1213,7 +1213,7 @@
             this.MaximumSize = new System.Drawing.Size(820, 750);
             this.MinimumSize = new System.Drawing.Size(820, 750);
             this.Name = "Window";
-            this.Text = "Frozen Flame Server Launcher v1.0-public";
+            this.Text = "Frozen Flame Server Launcher v1.1-public";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
