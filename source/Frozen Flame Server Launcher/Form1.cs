@@ -56,6 +56,9 @@ namespace Frozen_Flame_Server_Launcher
             Properties.Settings.Default.FullSlowdownOverweightRatioInput = FullSlowdownOverweightRatioInput.Text;
             Properties.Settings.Default.MonsterHealthMultiplierInput = MonsterHealthMultiplierInput.Text;
             Properties.Settings.Default.MonsterDamageMultiplierInput = MonsterDamageMultiplierInput.Text;
+            Properties.Settings.Default.IP = IpNumber.Text;
+            Properties.Settings.Default.IpEnabled = IpEnabled.Checked;
+            Properties.Settings.Default.RconEnabled = RconEnabled.Checked;
             Properties.Settings.Default.Save();
         }
 
@@ -96,6 +99,9 @@ namespace Frozen_Flame_Server_Launcher
             FullSlowdownOverweightRatioInput.Text = Properties.Settings.Default.FullSlowdownOverweightRatioInput;
             MonsterHealthMultiplierInput.Text = Properties.Settings.Default.MonsterHealthMultiplierInput;
             MonsterDamageMultiplierInput.Text = Properties.Settings.Default.MonsterDamageMultiplierInput;
+            IpNumber.Text = Properties.Settings.Default.IP;
+            IpEnabled.Checked = Properties.Settings.Default.IpEnabled;
+            RconEnabled.Checked = Properties.Settings.Default.RconEnabled;
 
 
 
@@ -148,6 +154,8 @@ namespace Frozen_Flame_Server_Launcher
             toolTip1.SetToolTip(this.FullSlowdownOverweightRatioText, "Overweight - disable even run and getting new items after that % (300/150% by default)");
             toolTip1.SetToolTip(this.MonsterHealthMultiplierText, "Enemy health multiplier");
             toolTip1.SetToolTip(this.MonsterDamageMultiplierText, "Enemy damage multiplier");
+            toolTip1.SetToolTip(this.IPText, "Set up your Server IP here");
+            toolTip1.SetToolTip(this.IpEnabled, "If this option is checked Server IP will be changed");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -267,6 +275,9 @@ namespace Frozen_Flame_Server_Launcher
 
             string value7 = RconPwdInput.Text.ToString();
             iniFile3.SetValue("", "RconPassword", value7);
+
+            string value8 = IpNumber.Text.ToString();
+            iniFile3.SetValue("", "IP", value8);
 
 
             INIFile iniFile = new INIFile("./SteamCMD/steamapps/common/Frozen Flame - Dedicated Server/FrozenFlame/Saved/Config/WindowsServer/Game.ini");
@@ -403,6 +414,9 @@ namespace Frozen_Flame_Server_Launcher
                 string value10 = "";
                 string value11 = easyanticheat.Checked.ToString();
                 string value12 = " -NoEAC";
+                string value13 = IpEnabled.Checked.ToString();
+                string value14 = "";
+                string value15 = "";
                 if (value5 == value6)
                     { 
                     value7 = iniFile.GetValue("", "ServerPassword");
@@ -415,8 +429,13 @@ namespace Frozen_Flame_Server_Launcher
                     }
                 if (value11 == value6)
                     value12 = "";
+                if (value13 == value6)
+                    {
+                    value14 = iniFile.GetValue("", "IP");
+                    value15 = " -ip=" + value14;
+                    }
 
-                Process.Start("./SteamCMD/steamapps/common/Frozen Flame - Dedicated Server/FrozenFlameServer.exe", "-log -LOCALLOGTIMES" + value3 + value4 + value10 + value12);
+                    Process.Start("./SteamCMD/steamapps/common/Frozen Flame - Dedicated Server/FrozenFlameServer.exe", "-log -LOCALLOGTIMES" + value3 + value4 + value10 + value12 + value15);
             }
             catch
             {

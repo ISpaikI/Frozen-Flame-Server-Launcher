@@ -125,6 +125,9 @@
             this.FullSlowdownOverweightRatioText = new System.Windows.Forms.Label();
             this.HalfSlowdownOverweightRatioInput = new System.Windows.Forms.TextBox();
             this.FullSlowdownOverweightRatioInput = new System.Windows.Forms.TextBox();
+            this.IPText = new System.Windows.Forms.Label();
+            this.IpNumber = new System.Windows.Forms.TextBox();
+            this.IpEnabled = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GamePortNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QueryPortNumber)).BeginInit();
@@ -178,7 +181,7 @@
             // PVPenabled
             // 
             this.PVPenabled.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.PVPenabled.Location = new System.Drawing.Point(35, 387);
+            this.PVPenabled.Location = new System.Drawing.Point(35, 415);
             this.PVPenabled.Name = "PVPenabled";
             this.PVPenabled.Size = new System.Drawing.Size(92, 19);
             this.PVPenabled.TabIndex = 2;
@@ -188,7 +191,7 @@
             // GamePort
             // 
             this.GamePort.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.GamePort.Location = new System.Drawing.Point(243, 169);
+            this.GamePort.Location = new System.Drawing.Point(243, 197);
             this.GamePort.Name = "GamePort";
             this.GamePort.Size = new System.Drawing.Size(63, 23);
             this.GamePort.TabIndex = 3;
@@ -198,7 +201,7 @@
             // QueryPort
             // 
             this.QueryPort.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.QueryPort.Location = new System.Drawing.Point(242, 198);
+            this.QueryPort.Location = new System.Drawing.Point(242, 226);
             this.QueryPort.Name = "QueryPort";
             this.QueryPort.Size = new System.Drawing.Size(64, 23);
             this.QueryPort.TabIndex = 4;
@@ -228,7 +231,7 @@
             // ServerGameOptions
             // 
             this.ServerGameOptions.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ServerGameOptions.Location = new System.Drawing.Point(9, 330);
+            this.ServerGameOptions.Location = new System.Drawing.Point(9, 358);
             this.ServerGameOptions.Name = "ServerGameOptions";
             this.ServerGameOptions.Size = new System.Drawing.Size(118, 15);
             this.ServerGameOptions.TabIndex = 7;
@@ -237,7 +240,7 @@
             // Flyeverywhere
             // 
             this.Flyeverywhere.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Flyeverywhere.Location = new System.Drawing.Point(35, 487);
+            this.Flyeverywhere.Location = new System.Drawing.Point(35, 515);
             this.Flyeverywhere.Name = "Flyeverywhere";
             this.Flyeverywhere.Size = new System.Drawing.Size(104, 19);
             this.Flyeverywhere.TabIndex = 8;
@@ -246,7 +249,7 @@
             // 
             // GamePortNumber
             // 
-            this.GamePortNumber.Location = new System.Drawing.Point(312, 169);
+            this.GamePortNumber.Location = new System.Drawing.Point(312, 197);
             this.GamePortNumber.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -264,7 +267,7 @@
             // 
             // QueryPortNumber
             // 
-            this.QueryPortNumber.Location = new System.Drawing.Point(312, 198);
+            this.QueryPortNumber.Location = new System.Drawing.Point(312, 226);
             this.QueryPortNumber.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -282,7 +285,7 @@
             // 
             // RconPortNumber
             // 
-            this.RconPortNumber.Location = new System.Drawing.Point(312, 227);
+            this.RconPortNumber.Location = new System.Drawing.Point(312, 255);
             this.RconPortNumber.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -301,7 +304,7 @@
             // RconPort
             // 
             this.RconPort.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.RconPort.Location = new System.Drawing.Point(247, 227);
+            this.RconPort.Location = new System.Drawing.Point(247, 255);
             this.RconPort.Name = "RconPort";
             this.RconPort.Size = new System.Drawing.Size(59, 23);
             this.RconPort.TabIndex = 12;
@@ -311,7 +314,7 @@
             // XPMultiplier
             // 
             this.XPMultiplier.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.XPMultiplier.Location = new System.Drawing.Point(333, 532);
+            this.XPMultiplier.Location = new System.Drawing.Point(333, 560);
             this.XPMultiplier.Name = "XPMultiplier";
             this.XPMultiplier.Size = new System.Drawing.Size(202, 23);
             this.XPMultiplier.TabIndex = 13;
@@ -321,7 +324,7 @@
             // NoBuildingCost
             // 
             this.NoBuildingCost.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.NoBuildingCost.Location = new System.Drawing.Point(568, 384);
+            this.NoBuildingCost.Location = new System.Drawing.Point(568, 412);
             this.NoBuildingCost.Name = "NoBuildingCost";
             this.NoBuildingCost.Size = new System.Drawing.Size(119, 19);
             this.NoBuildingCost.TabIndex = 14;
@@ -331,7 +334,7 @@
             // BuildingWithoutRestrictions
             // 
             this.BuildingWithoutRestrictions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BuildingWithoutRestrictions.Location = new System.Drawing.Point(568, 409);
+            this.BuildingWithoutRestrictions.Location = new System.Drawing.Point(568, 437);
             this.BuildingWithoutRestrictions.Name = "BuildingWithoutRestrictions";
             this.BuildingWithoutRestrictions.Size = new System.Drawing.Size(175, 19);
             this.BuildingWithoutRestrictions.TabIndex = 16;
@@ -341,7 +344,7 @@
             // DruabilityAfterDecay
             // 
             this.DruabilityAfterDecay.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DruabilityAfterDecay.Location = new System.Drawing.Point(624, 471);
+            this.DruabilityAfterDecay.Location = new System.Drawing.Point(624, 499);
             this.DruabilityAfterDecay.Name = "DruabilityAfterDecay";
             this.DruabilityAfterDecay.Size = new System.Drawing.Size(119, 23);
             this.DruabilityAfterDecay.TabIndex = 17;
@@ -351,7 +354,7 @@
             // ServerName
             // 
             this.ServerName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ServerName.Location = new System.Drawing.Point(232, 47);
+            this.ServerName.Location = new System.Drawing.Point(232, 75);
             this.ServerName.Name = "ServerName";
             this.ServerName.Size = new System.Drawing.Size(74, 23);
             this.ServerName.TabIndex = 19;
@@ -360,7 +363,7 @@
             // 
             // ServerNameInput
             // 
-            this.ServerNameInput.Location = new System.Drawing.Point(312, 47);
+            this.ServerNameInput.Location = new System.Drawing.Point(312, 75);
             this.ServerNameInput.Name = "ServerNameInput";
             this.ServerNameInput.Size = new System.Drawing.Size(230, 23);
             this.ServerNameInput.TabIndex = 20;
@@ -368,7 +371,7 @@
             // Dropequippeditemsafterdeath
             // 
             this.Dropequippeditemsafterdeath.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Dropequippeditemsafterdeath.Location = new System.Drawing.Point(35, 412);
+            this.Dropequippeditemsafterdeath.Location = new System.Drawing.Point(35, 440);
             this.Dropequippeditemsafterdeath.Name = "Dropequippeditemsafterdeath";
             this.Dropequippeditemsafterdeath.Size = new System.Drawing.Size(197, 19);
             this.Dropequippeditemsafterdeath.TabIndex = 21;
@@ -378,7 +381,7 @@
             // Dropequipableitemsafterdeath
             // 
             this.Dropequipableitemsafterdeath.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Dropequipableitemsafterdeath.Location = new System.Drawing.Point(35, 437);
+            this.Dropequipableitemsafterdeath.Location = new System.Drawing.Point(35, 465);
             this.Dropequipableitemsafterdeath.Name = "Dropequipableitemsafterdeath";
             this.Dropequipableitemsafterdeath.Size = new System.Drawing.Size(199, 19);
             this.Dropequipableitemsafterdeath.TabIndex = 22;
@@ -388,7 +391,7 @@
             // Dropfoodondeath
             // 
             this.Dropfoodondeath.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Dropfoodondeath.Location = new System.Drawing.Point(35, 462);
+            this.Dropfoodondeath.Location = new System.Drawing.Point(35, 490);
             this.Dropfoodondeath.Name = "Dropfoodondeath";
             this.Dropfoodondeath.Size = new System.Drawing.Size(140, 19);
             this.Dropfoodondeath.TabIndex = 23;
@@ -398,7 +401,7 @@
             // DisableOverweightSystem
             // 
             this.DisableOverweightSystem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DisableOverweightSystem.Location = new System.Drawing.Point(35, 512);
+            this.DisableOverweightSystem.Location = new System.Drawing.Point(35, 540);
             this.DisableOverweightSystem.Name = "DisableOverweightSystem";
             this.DisableOverweightSystem.Size = new System.Drawing.Size(166, 19);
             this.DisableOverweightSystem.TabIndex = 24;
@@ -408,7 +411,7 @@
             // ServerPassword
             // 
             this.ServerPassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ServerPassword.Location = new System.Drawing.Point(214, 78);
+            this.ServerPassword.Location = new System.Drawing.Point(214, 106);
             this.ServerPassword.Name = "ServerPassword";
             this.ServerPassword.Size = new System.Drawing.Size(92, 23);
             this.ServerPassword.TabIndex = 25;
@@ -417,7 +420,7 @@
             // 
             // ServerPasswordInput
             // 
-            this.ServerPasswordInput.Location = new System.Drawing.Point(312, 78);
+            this.ServerPasswordInput.Location = new System.Drawing.Point(312, 106);
             this.ServerPasswordInput.Name = "ServerPasswordInput";
             this.ServerPasswordInput.Size = new System.Drawing.Size(160, 23);
             this.ServerPasswordInput.TabIndex = 26;
@@ -425,7 +428,7 @@
             // ServerPasswordEnable
             // 
             this.ServerPasswordEnable.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ServerPasswordEnable.Location = new System.Drawing.Point(478, 80);
+            this.ServerPasswordEnable.Location = new System.Drawing.Point(478, 108);
             this.ServerPasswordEnable.Name = "ServerPasswordEnable";
             this.ServerPasswordEnable.Size = new System.Drawing.Size(61, 19);
             this.ServerPasswordEnable.TabIndex = 27;
@@ -435,7 +438,7 @@
             // MaxPlayers
             // 
             this.MaxPlayers.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.MaxPlayers.Location = new System.Drawing.Point(236, 138);
+            this.MaxPlayers.Location = new System.Drawing.Point(236, 166);
             this.MaxPlayers.Name = "MaxPlayers";
             this.MaxPlayers.Size = new System.Drawing.Size(70, 23);
             this.MaxPlayers.TabIndex = 28;
@@ -444,7 +447,7 @@
             // 
             // MaxPlayerNumber
             // 
-            this.MaxPlayerNumber.Location = new System.Drawing.Point(312, 138);
+            this.MaxPlayerNumber.Location = new System.Drawing.Point(312, 166);
             this.MaxPlayerNumber.Maximum = new decimal(new int[] {
             250,
             0,
@@ -463,7 +466,7 @@
             // MinimalLevelToDropItemAfterDeath
             // 
             this.MinimalLevelToDropItemAfterDeath.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.MinimalLevelToDropItemAfterDeath.Location = new System.Drawing.Point(333, 385);
+            this.MinimalLevelToDropItemAfterDeath.Location = new System.Drawing.Point(333, 413);
             this.MinimalLevelToDropItemAfterDeath.Name = "MinimalLevelToDropItemAfterDeath";
             this.MinimalLevelToDropItemAfterDeath.Size = new System.Drawing.Size(128, 30);
             this.MinimalLevelToDropItemAfterDeath.TabIndex = 31;
@@ -471,7 +474,7 @@
             // 
             // MinimalLevelToDropItemAfterDeathNumber
             // 
-            this.MinimalLevelToDropItemAfterDeathNumber.Location = new System.Drawing.Point(277, 388);
+            this.MinimalLevelToDropItemAfterDeathNumber.Location = new System.Drawing.Point(277, 416);
             this.MinimalLevelToDropItemAfterDeathNumber.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -515,10 +518,10 @@
             this.Steam.ForeColor = System.Drawing.Color.Black;
             this.Steam.Location = new System.Drawing.Point(589, 148);
             this.Steam.Name = "Steam";
-            this.Steam.Size = new System.Drawing.Size(181, 45);
+            this.Steam.Size = new System.Drawing.Size(181, 101);
             this.Steam.TabIndex = 36;
             this.Steam.Text = "- Steam have to be started \r\n   and logged in before starting!\r\n- Rcon is not wor" +
-    "king";
+    "king\r\n\r\nUpdate v1.2\r\n- added Server IP Option";
             // 
             // Administration
             // 
@@ -580,7 +583,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 330);
+            this.pictureBox4.Location = new System.Drawing.Point(9, 358);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(784, 15);
             this.pictureBox4.TabIndex = 43;
@@ -589,7 +592,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox5.Location = new System.Drawing.Point(551, 376);
+            this.pictureBox5.Location = new System.Drawing.Point(551, 404);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(232, 156);
             this.pictureBox5.TabIndex = 44;
@@ -600,7 +603,7 @@
             this.pictureBox6.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox6.Location = new System.Drawing.Point(189, 27);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(376, 297);
+            this.pictureBox6.Size = new System.Drawing.Size(376, 325);
             this.pictureBox6.TabIndex = 45;
             this.pictureBox6.TabStop = false;
             // 
@@ -609,14 +612,14 @@
             this.pictureBox7.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox7.Location = new System.Drawing.Point(9, 27);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(174, 297);
+            this.pictureBox7.Size = new System.Drawing.Size(174, 325);
             this.pictureBox7.TabIndex = 46;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pictureBox8.Location = new System.Drawing.Point(9, 348);
+            this.pictureBox8.Location = new System.Drawing.Point(9, 376);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(784, 354);
             this.pictureBox8.TabIndex = 47;
@@ -633,7 +636,7 @@
             // 
             // SaveServerGameOptions
             // 
-            this.SaveServerGameOptions.Location = new System.Drawing.Point(606, 654);
+            this.SaveServerGameOptions.Location = new System.Drawing.Point(606, 682);
             this.SaveServerGameOptions.Name = "SaveServerGameOptions";
             this.SaveServerGameOptions.Size = new System.Drawing.Size(137, 23);
             this.SaveServerGameOptions.TabIndex = 0;
@@ -643,7 +646,7 @@
             // 
             // SaveServerSettings
             // 
-            this.SaveServerSettings.Location = new System.Drawing.Point(309, 291);
+            this.SaveServerSettings.Location = new System.Drawing.Point(312, 322);
             this.SaveServerSettings.Name = "SaveServerSettings";
             this.SaveServerSettings.Size = new System.Drawing.Size(134, 23);
             this.SaveServerSettings.TabIndex = 49;
@@ -653,7 +656,7 @@
             // 
             // DurabilityMinNumber
             // 
-            this.DurabilityMinNumber.Location = new System.Drawing.Point(568, 471);
+            this.DurabilityMinNumber.Location = new System.Drawing.Point(568, 499);
             this.DurabilityMinNumber.Name = "DurabilityMinNumber";
             this.DurabilityMinNumber.Size = new System.Drawing.Size(50, 23);
             this.DurabilityMinNumber.TabIndex = 50;
@@ -661,7 +664,7 @@
             // 
             // XPMultiplierNumber
             // 
-            this.XPMultiplierNumber.Location = new System.Drawing.Point(277, 532);
+            this.XPMultiplierNumber.Location = new System.Drawing.Point(277, 560);
             this.XPMultiplierNumber.Name = "XPMultiplierNumber";
             this.XPMultiplierNumber.Size = new System.Drawing.Size(50, 23);
             this.XPMultiplierNumber.TabIndex = 51;
@@ -669,7 +672,7 @@
             // 
             // DestroyRes
             // 
-            this.DestroyRes.Location = new System.Drawing.Point(568, 500);
+            this.DestroyRes.Location = new System.Drawing.Point(568, 528);
             this.DestroyRes.Name = "DestroyRes";
             this.DestroyRes.Size = new System.Drawing.Size(50, 23);
             this.DestroyRes.TabIndex = 53;
@@ -678,7 +681,7 @@
             // DestroyResText
             // 
             this.DestroyResText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DestroyResText.Location = new System.Drawing.Point(624, 496);
+            this.DestroyResText.Location = new System.Drawing.Point(624, 524);
             this.DestroyResText.Name = "DestroyResText";
             this.DestroyResText.Size = new System.Drawing.Size(134, 30);
             this.DestroyResText.TabIndex = 54;
@@ -687,7 +690,7 @@
             // RconPwdText
             // 
             this.RconPwdText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.RconPwdText.Location = new System.Drawing.Point(219, 108);
+            this.RconPwdText.Location = new System.Drawing.Point(219, 136);
             this.RconPwdText.Name = "RconPwdText";
             this.RconPwdText.Size = new System.Drawing.Size(87, 23);
             this.RconPwdText.TabIndex = 55;
@@ -696,7 +699,7 @@
             // 
             // RconPwdInput
             // 
-            this.RconPwdInput.Location = new System.Drawing.Point(312, 108);
+            this.RconPwdInput.Location = new System.Drawing.Point(312, 136);
             this.RconPwdInput.Name = "RconPwdInput";
             this.RconPwdInput.Size = new System.Drawing.Size(160, 23);
             this.RconPwdInput.TabIndex = 56;
@@ -704,7 +707,7 @@
             // RconEnabled
             // 
             this.RconEnabled.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.RconEnabled.Location = new System.Drawing.Point(478, 112);
+            this.RconEnabled.Location = new System.Drawing.Point(478, 140);
             this.RconEnabled.Name = "RconEnabled";
             this.RconEnabled.Size = new System.Drawing.Size(61, 19);
             this.RconEnabled.TabIndex = 57;
@@ -735,7 +738,7 @@
             // 
             this.easyanticheat.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.easyanticheat.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.easyanticheat.Location = new System.Drawing.Point(219, 256);
+            this.easyanticheat.Location = new System.Drawing.Point(219, 284);
             this.easyanticheat.Name = "easyanticheat";
             this.easyanticheat.Size = new System.Drawing.Size(108, 19);
             this.easyanticheat.TabIndex = 60;
@@ -745,7 +748,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox10.Location = new System.Drawing.Point(18, 376);
+            this.pictureBox10.Location = new System.Drawing.Point(18, 404);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(527, 317);
             this.pictureBox10.TabIndex = 61;
@@ -754,7 +757,7 @@
             // DurationOfDayText
             // 
             this.DurationOfDayText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DurationOfDayText.Location = new System.Drawing.Point(333, 503);
+            this.DurationOfDayText.Location = new System.Drawing.Point(333, 531);
             this.DurationOfDayText.Name = "DurationOfDayText";
             this.DurationOfDayText.Size = new System.Drawing.Size(89, 25);
             this.DurationOfDayText.TabIndex = 62;
@@ -764,7 +767,7 @@
             // RestoreHealthOnLvl
             // 
             this.RestoreHealthOnLvl.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.RestoreHealthOnLvl.Location = new System.Drawing.Point(35, 536);
+            this.RestoreHealthOnLvl.Location = new System.Drawing.Point(35, 564);
             this.RestoreHealthOnLvl.Name = "RestoreHealthOnLvl";
             this.RestoreHealthOnLvl.Size = new System.Drawing.Size(163, 19);
             this.RestoreHealthOnLvl.TabIndex = 63;
@@ -774,7 +777,7 @@
             // HealthAfterDeathText
             // 
             this.HealthAfterDeathText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.HealthAfterDeathText.Location = new System.Drawing.Point(333, 559);
+            this.HealthAfterDeathText.Location = new System.Drawing.Point(333, 587);
             this.HealthAfterDeathText.Name = "HealthAfterDeathText";
             this.HealthAfterDeathText.Size = new System.Drawing.Size(102, 25);
             this.HealthAfterDeathText.TabIndex = 64;
@@ -784,7 +787,7 @@
             // SprintStaminaCostText
             // 
             this.SprintStaminaCostText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.SprintStaminaCostText.Location = new System.Drawing.Point(333, 474);
+            this.SprintStaminaCostText.Location = new System.Drawing.Point(333, 502);
             this.SprintStaminaCostText.Name = "SprintStaminaCostText";
             this.SprintStaminaCostText.Size = new System.Drawing.Size(130, 23);
             this.SprintStaminaCostText.TabIndex = 65;
@@ -794,7 +797,7 @@
             // JumpStaminaCostText
             // 
             this.JumpStaminaCostText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.JumpStaminaCostText.Location = new System.Drawing.Point(333, 446);
+            this.JumpStaminaCostText.Location = new System.Drawing.Point(333, 474);
             this.JumpStaminaCostText.Name = "JumpStaminaCostText";
             this.JumpStaminaCostText.Size = new System.Drawing.Size(128, 23);
             this.JumpStaminaCostText.TabIndex = 66;
@@ -804,7 +807,7 @@
             // ArmorDeathText
             // 
             this.ArmorDeathText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ArmorDeathText.Location = new System.Drawing.Point(333, 417);
+            this.ArmorDeathText.Location = new System.Drawing.Point(333, 445);
             this.ArmorDeathText.Name = "ArmorDeathText";
             this.ArmorDeathText.Size = new System.Drawing.Size(194, 23);
             this.ArmorDeathText.TabIndex = 67;
@@ -814,7 +817,7 @@
             // BuldingPlayerDMG
             // 
             this.BuldingPlayerDMG.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BuldingPlayerDMG.Location = new System.Drawing.Point(568, 433);
+            this.BuldingPlayerDMG.Location = new System.Drawing.Point(568, 461);
             this.BuldingPlayerDMG.Name = "BuldingPlayerDMG";
             this.BuldingPlayerDMG.Size = new System.Drawing.Size(209, 36);
             this.BuldingPlayerDMG.TabIndex = 68;
@@ -823,7 +826,7 @@
             // 
             // ArmorDeathInput
             // 
-            this.ArmorDeathInput.Location = new System.Drawing.Point(277, 417);
+            this.ArmorDeathInput.Location = new System.Drawing.Point(277, 445);
             this.ArmorDeathInput.Name = "ArmorDeathInput";
             this.ArmorDeathInput.Size = new System.Drawing.Size(50, 23);
             this.ArmorDeathInput.TabIndex = 69;
@@ -831,7 +834,7 @@
             // 
             // HealthAfterDeathInput
             // 
-            this.HealthAfterDeathInput.Location = new System.Drawing.Point(277, 561);
+            this.HealthAfterDeathInput.Location = new System.Drawing.Point(277, 589);
             this.HealthAfterDeathInput.Name = "HealthAfterDeathInput";
             this.HealthAfterDeathInput.Size = new System.Drawing.Size(50, 23);
             this.HealthAfterDeathInput.TabIndex = 70;
@@ -839,7 +842,7 @@
             // 
             // JumpStaminaCostInput
             // 
-            this.JumpStaminaCostInput.Location = new System.Drawing.Point(277, 446);
+            this.JumpStaminaCostInput.Location = new System.Drawing.Point(277, 474);
             this.JumpStaminaCostInput.Name = "JumpStaminaCostInput";
             this.JumpStaminaCostInput.Size = new System.Drawing.Size(50, 23);
             this.JumpStaminaCostInput.TabIndex = 71;
@@ -847,7 +850,7 @@
             // 
             // SprintStaminaCostInput
             // 
-            this.SprintStaminaCostInput.Location = new System.Drawing.Point(277, 474);
+            this.SprintStaminaCostInput.Location = new System.Drawing.Point(277, 502);
             this.SprintStaminaCostInput.Name = "SprintStaminaCostInput";
             this.SprintStaminaCostInput.Size = new System.Drawing.Size(50, 23);
             this.SprintStaminaCostInput.TabIndex = 72;
@@ -855,7 +858,7 @@
             // 
             // DurationOfDayInput
             // 
-            this.DurationOfDayInput.Location = new System.Drawing.Point(277, 503);
+            this.DurationOfDayInput.Location = new System.Drawing.Point(277, 531);
             this.DurationOfDayInput.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -869,7 +872,7 @@
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox11.Location = new System.Drawing.Point(552, 564);
+            this.pictureBox11.Location = new System.Drawing.Point(552, 592);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(232, 73);
             this.pictureBox11.TabIndex = 74;
@@ -877,7 +880,7 @@
             // 
             // MonsterHealthMultiplierInput
             // 
-            this.MonsterHealthMultiplierInput.Location = new System.Drawing.Point(566, 575);
+            this.MonsterHealthMultiplierInput.Location = new System.Drawing.Point(566, 603);
             this.MonsterHealthMultiplierInput.Name = "MonsterHealthMultiplierInput";
             this.MonsterHealthMultiplierInput.Size = new System.Drawing.Size(50, 23);
             this.MonsterHealthMultiplierInput.TabIndex = 75;
@@ -885,7 +888,7 @@
             // 
             // MonsterDamageMultiplierInput
             // 
-            this.MonsterDamageMultiplierInput.Location = new System.Drawing.Point(566, 604);
+            this.MonsterDamageMultiplierInput.Location = new System.Drawing.Point(566, 632);
             this.MonsterDamageMultiplierInput.Name = "MonsterDamageMultiplierInput";
             this.MonsterDamageMultiplierInput.Size = new System.Drawing.Size(50, 23);
             this.MonsterDamageMultiplierInput.TabIndex = 76;
@@ -894,7 +897,7 @@
             // MonsterHealthMultiplierText
             // 
             this.MonsterHealthMultiplierText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.MonsterHealthMultiplierText.Location = new System.Drawing.Point(622, 575);
+            this.MonsterHealthMultiplierText.Location = new System.Drawing.Point(622, 603);
             this.MonsterHealthMultiplierText.Name = "MonsterHealthMultiplierText";
             this.MonsterHealthMultiplierText.Size = new System.Drawing.Size(141, 23);
             this.MonsterHealthMultiplierText.TabIndex = 77;
@@ -904,7 +907,7 @@
             // MonsterDamageMultiplierText
             // 
             this.MonsterDamageMultiplierText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.MonsterDamageMultiplierText.Location = new System.Drawing.Point(622, 604);
+            this.MonsterDamageMultiplierText.Location = new System.Drawing.Point(622, 632);
             this.MonsterDamageMultiplierText.Name = "MonsterDamageMultiplierText";
             this.MonsterDamageMultiplierText.Size = new System.Drawing.Size(151, 23);
             this.MonsterDamageMultiplierText.TabIndex = 78;
@@ -914,7 +917,7 @@
             // FlyOverweight
             // 
             this.FlyOverweight.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.FlyOverweight.Location = new System.Drawing.Point(35, 561);
+            this.FlyOverweight.Location = new System.Drawing.Point(35, 589);
             this.FlyOverweight.Name = "FlyOverweight";
             this.FlyOverweight.Size = new System.Drawing.Size(134, 19);
             this.FlyOverweight.TabIndex = 79;
@@ -924,7 +927,7 @@
             // TeleportOverweight
             // 
             this.TeleportOverweight.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.TeleportOverweight.Location = new System.Drawing.Point(35, 586);
+            this.TeleportOverweight.Location = new System.Drawing.Point(35, 614);
             this.TeleportOverweight.Name = "TeleportOverweight";
             this.TeleportOverweight.Size = new System.Drawing.Size(161, 19);
             this.TeleportOverweight.TabIndex = 80;
@@ -936,14 +939,14 @@
             this.pictureBox12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBox12.Location = new System.Drawing.Point(197, 35);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(359, 246);
+            this.pictureBox12.Size = new System.Drawing.Size(359, 275);
             this.pictureBox12.TabIndex = 81;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox13.Location = new System.Drawing.Point(18, 355);
+            this.pictureBox13.Location = new System.Drawing.Point(18, 383);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(528, 15);
             this.pictureBox13.TabIndex = 82;
@@ -952,7 +955,7 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox14.Location = new System.Drawing.Point(551, 355);
+            this.pictureBox14.Location = new System.Drawing.Point(551, 383);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(232, 15);
             this.pictureBox14.TabIndex = 83;
@@ -961,7 +964,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox15.Location = new System.Drawing.Point(552, 543);
+            this.pictureBox15.Location = new System.Drawing.Point(552, 571);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(232, 15);
             this.pictureBox15.TabIndex = 84;
@@ -970,7 +973,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label3.Location = new System.Drawing.Point(551, 355);
+            this.label3.Location = new System.Drawing.Point(551, 383);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 86;
@@ -979,7 +982,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label4.Location = new System.Drawing.Point(18, 355);
+            this.label4.Location = new System.Drawing.Point(18, 383);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 15);
             this.label4.TabIndex = 87;
@@ -988,7 +991,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label5.Location = new System.Drawing.Point(552, 543);
+            this.label5.Location = new System.Drawing.Point(552, 571);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 15);
             this.label5.TabIndex = 88;
@@ -1006,7 +1009,7 @@
             // WeaponDurabilityText
             // 
             this.WeaponDurabilityText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.WeaponDurabilityText.Location = new System.Drawing.Point(333, 589);
+            this.WeaponDurabilityText.Location = new System.Drawing.Point(333, 617);
             this.WeaponDurabilityText.Name = "WeaponDurabilityText";
             this.WeaponDurabilityText.Size = new System.Drawing.Size(183, 26);
             this.WeaponDurabilityText.TabIndex = 90;
@@ -1015,7 +1018,7 @@
             // 
             // WeaponDurabilityInput
             // 
-            this.WeaponDurabilityInput.Location = new System.Drawing.Point(277, 589);
+            this.WeaponDurabilityInput.Location = new System.Drawing.Point(277, 617);
             this.WeaponDurabilityInput.Name = "WeaponDurabilityInput";
             this.WeaponDurabilityInput.Size = new System.Drawing.Size(50, 23);
             this.WeaponDurabilityInput.TabIndex = 91;
@@ -1044,7 +1047,7 @@
             this.pictureBox18.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox18.Location = new System.Drawing.Point(571, 27);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(222, 297);
+            this.pictureBox18.Size = new System.Drawing.Size(222, 325);
             this.pictureBox18.TabIndex = 94;
             this.pictureBox18.TabStop = false;
             // 
@@ -1053,7 +1056,7 @@
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.RebeccaPurple;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(711, 296);
+            this.linkLabel1.Location = new System.Drawing.Point(711, 322);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(70, 15);
             this.linkLabel1.TabIndex = 95;
@@ -1066,14 +1069,14 @@
             this.pictureBox19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBox19.Location = new System.Drawing.Point(578, 140);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(206, 176);
+            this.pictureBox19.Size = new System.Drawing.Size(206, 205);
             this.pictureBox19.TabIndex = 96;
             this.pictureBox19.TabStop = false;
             // 
             // HalfSlowdownOverweightRatioText
             // 
             this.HalfSlowdownOverweightRatioText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.HalfSlowdownOverweightRatioText.Location = new System.Drawing.Point(333, 621);
+            this.HalfSlowdownOverweightRatioText.Location = new System.Drawing.Point(333, 649);
             this.HalfSlowdownOverweightRatioText.Name = "HalfSlowdownOverweightRatioText";
             this.HalfSlowdownOverweightRatioText.Size = new System.Drawing.Size(178, 23);
             this.HalfSlowdownOverweightRatioText.TabIndex = 97;
@@ -1083,7 +1086,7 @@
             // FullSlowdownOverweightRatioText
             // 
             this.FullSlowdownOverweightRatioText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.FullSlowdownOverweightRatioText.Location = new System.Drawing.Point(333, 653);
+            this.FullSlowdownOverweightRatioText.Location = new System.Drawing.Point(333, 681);
             this.FullSlowdownOverweightRatioText.Name = "FullSlowdownOverweightRatioText";
             this.FullSlowdownOverweightRatioText.Size = new System.Drawing.Size(178, 23);
             this.FullSlowdownOverweightRatioText.TabIndex = 98;
@@ -1092,7 +1095,7 @@
             // 
             // HalfSlowdownOverweightRatioInput
             // 
-            this.HalfSlowdownOverweightRatioInput.Location = new System.Drawing.Point(277, 621);
+            this.HalfSlowdownOverweightRatioInput.Location = new System.Drawing.Point(277, 649);
             this.HalfSlowdownOverweightRatioInput.Name = "HalfSlowdownOverweightRatioInput";
             this.HalfSlowdownOverweightRatioInput.Size = new System.Drawing.Size(50, 23);
             this.HalfSlowdownOverweightRatioInput.TabIndex = 99;
@@ -1100,18 +1103,49 @@
             // 
             // FullSlowdownOverweightRatioInput
             // 
-            this.FullSlowdownOverweightRatioInput.Location = new System.Drawing.Point(277, 653);
+            this.FullSlowdownOverweightRatioInput.Location = new System.Drawing.Point(277, 681);
             this.FullSlowdownOverweightRatioInput.Name = "FullSlowdownOverweightRatioInput";
             this.FullSlowdownOverweightRatioInput.Size = new System.Drawing.Size(50, 23);
             this.FullSlowdownOverweightRatioInput.TabIndex = 100;
             this.FullSlowdownOverweightRatioInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // IPText
+            // 
+            this.IPText.AutoSize = true;
+            this.IPText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.IPText.Location = new System.Drawing.Point(254, 49);
+            this.IPText.Name = "IPText";
+            this.IPText.Size = new System.Drawing.Size(52, 15);
+            this.IPText.TabIndex = 101;
+            this.IPText.Text = "Server IP";
+            // 
+            // IpNumber
+            // 
+            this.IpNumber.Location = new System.Drawing.Point(312, 46);
+            this.IpNumber.Name = "IpNumber";
+            this.IpNumber.Size = new System.Drawing.Size(160, 23);
+            this.IpNumber.TabIndex = 102;
+            // 
+            // IpEnabled
+            // 
+            this.IpEnabled.AutoSize = true;
+            this.IpEnabled.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.IpEnabled.Location = new System.Drawing.Point(478, 49);
+            this.IpEnabled.Name = "IpEnabled";
+            this.IpEnabled.Size = new System.Drawing.Size(61, 19);
+            this.IpEnabled.TabIndex = 103;
+            this.IpEnabled.Text = "enable";
+            this.IpEnabled.UseVisualStyleBackColor = false;
             // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(804, 711);
+            this.ClientSize = new System.Drawing.Size(804, 741);
+            this.Controls.Add(this.IpEnabled);
+            this.Controls.Add(this.IpNumber);
+            this.Controls.Add(this.IPText);
             this.Controls.Add(this.FullSlowdownOverweightRatioInput);
             this.Controls.Add(this.HalfSlowdownOverweightRatioInput);
             this.Controls.Add(this.FullSlowdownOverweightRatioText);
@@ -1210,10 +1244,10 @@
             this.Controls.Add(this.pictureBox8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(820, 750);
-            this.MinimumSize = new System.Drawing.Size(820, 750);
+            this.MaximumSize = new System.Drawing.Size(820, 780);
+            this.MinimumSize = new System.Drawing.Size(820, 780);
             this.Name = "Window";
-            this.Text = "Frozen Flame Server Launcher v1.1-public";
+            this.Text = "Frozen Flame Server Launcher v1.2-public";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1347,5 +1381,8 @@
         private Label FullSlowdownOverweightRatioText;
         private TextBox HalfSlowdownOverweightRatioInput;
         private TextBox FullSlowdownOverweightRatioInput;
+        private Label IPText;
+        private TextBox IpNumber;
+        private CheckBox IpEnabled;
     }
 }

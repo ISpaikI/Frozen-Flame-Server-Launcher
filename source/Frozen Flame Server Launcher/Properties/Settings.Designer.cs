@@ -442,5 +442,65 @@ namespace Frozen_Flame_Server_Launcher.Properties {
                 this["MonsterDamageMultiplierInput"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0")]
+        public string PlayerDamageMultiplier {
+            get {
+                return ((string)(this["PlayerDamageMultiplier"]));
+            }
+            set {
+                this["PlayerDamageMultiplier"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0")]
+        public string ResourceDropMultiplier {
+            get {
+                return ((string)(this["ResourceDropMultiplier"]));
+            }
+            set {
+                this["ResourceDropMultiplier"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Your Server IP Here")]
+        public string IP {
+            get {
+                return ((string)(this["IP"]));
+            }
+            set {
+                this["IP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IpEnabled {
+            get {
+                return ((bool)(this["IpEnabled"]));
+            }
+            set {
+                this["IpEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RconEnabled {
+            get {
+                return ((bool)(this["RconEnabled"]));
+            }
+            set {
+                this["RconEnabled"] = value;
+            }
+        }
     }
 }
