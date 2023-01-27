@@ -128,6 +128,9 @@
             this.IPText = new System.Windows.Forms.Label();
             this.IpNumber = new System.Windows.Forms.TextBox();
             this.IpEnabled = new System.Windows.Forms.CheckBox();
+            this.disabledestroyhammer = new System.Windows.Forms.CheckBox();
+            this.ResourcedropmultiplierInput = new System.Windows.Forms.TextBox();
+            this.ResourcedropmultiplierText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GamePortNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QueryPortNumber)).BeginInit();
@@ -518,10 +521,11 @@
             this.Steam.ForeColor = System.Drawing.Color.Black;
             this.Steam.Location = new System.Drawing.Point(589, 148);
             this.Steam.Name = "Steam";
-            this.Steam.Size = new System.Drawing.Size(181, 101);
+            this.Steam.Size = new System.Drawing.Size(181, 168);
             this.Steam.TabIndex = 36;
             this.Steam.Text = "- Steam have to be started \r\n   and logged in before starting!\r\n- Rcon is not wor" +
-    "king\r\n\r\nUpdate v1.2\r\n- added Server IP Option";
+    "king\r\n\r\nUpdate v1.3\r\n- added options:\r\n   Disable destroy hammer\r\n   ResourceDro" +
+    "p multiplier";
             // 
             // Administration
             // 
@@ -621,7 +625,7 @@
             this.pictureBox8.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox8.Location = new System.Drawing.Point(9, 376);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(784, 354);
+            this.pictureBox8.Size = new System.Drawing.Size(784, 373);
             this.pictureBox8.TabIndex = 47;
             this.pictureBox8.TabStop = false;
             // 
@@ -750,7 +754,7 @@
             this.pictureBox10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBox10.Location = new System.Drawing.Point(18, 404);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(527, 317);
+            this.pictureBox10.Size = new System.Drawing.Size(527, 336);
             this.pictureBox10.TabIndex = 61;
             this.pictureBox10.TabStop = false;
             // 
@@ -1137,12 +1141,44 @@
             this.IpEnabled.Text = "enable";
             this.IpEnabled.UseVisualStyleBackColor = false;
             // 
+            // disabledestroyhammer
+            // 
+            this.disabledestroyhammer.AutoSize = true;
+            this.disabledestroyhammer.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.disabledestroyhammer.Location = new System.Drawing.Point(35, 639);
+            this.disabledestroyhammer.Name = "disabledestroyhammer";
+            this.disabledestroyhammer.Size = new System.Drawing.Size(153, 19);
+            this.disabledestroyhammer.TabIndex = 104;
+            this.disabledestroyhammer.Text = "disable destroy hammer";
+            this.disabledestroyhammer.UseVisualStyleBackColor = false;
+            // 
+            // ResourcedropmultiplierInput
+            // 
+            this.ResourcedropmultiplierInput.Location = new System.Drawing.Point(277, 710);
+            this.ResourcedropmultiplierInput.Name = "ResourcedropmultiplierInput";
+            this.ResourcedropmultiplierInput.Size = new System.Drawing.Size(50, 23);
+            this.ResourcedropmultiplierInput.TabIndex = 105;
+            this.ResourcedropmultiplierInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // ResourcedropmultiplierText
+            // 
+            this.ResourcedropmultiplierText.AutoSize = true;
+            this.ResourcedropmultiplierText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ResourcedropmultiplierText.Location = new System.Drawing.Point(333, 713);
+            this.ResourcedropmultiplierText.Name = "ResourcedropmultiplierText";
+            this.ResourcedropmultiplierText.Size = new System.Drawing.Size(137, 15);
+            this.ResourcedropmultiplierText.TabIndex = 106;
+            this.ResourcedropmultiplierText.Text = "Resource drop multiplier";
+            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(804, 741);
+            this.ClientSize = new System.Drawing.Size(804, 761);
+            this.Controls.Add(this.ResourcedropmultiplierText);
+            this.Controls.Add(this.ResourcedropmultiplierInput);
+            this.Controls.Add(this.disabledestroyhammer);
             this.Controls.Add(this.IpEnabled);
             this.Controls.Add(this.IpNumber);
             this.Controls.Add(this.IPText);
@@ -1244,10 +1280,10 @@
             this.Controls.Add(this.pictureBox8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(820, 780);
-            this.MinimumSize = new System.Drawing.Size(820, 780);
+            this.MaximumSize = new System.Drawing.Size(820, 800);
+            this.MinimumSize = new System.Drawing.Size(820, 800);
             this.Name = "Window";
-            this.Text = "Frozen Flame Server Launcher v1.2-public";
+            this.Text = "Frozen Flame Server Launcher v1.3-public";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1384,5 +1420,8 @@
         private Label IPText;
         private TextBox IpNumber;
         private CheckBox IpEnabled;
+        private CheckBox disabledestroyhammer;
+        private TextBox ResourcedropmultiplierInput;
+        private Label ResourcedropmultiplierText;
     }
 }

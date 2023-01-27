@@ -59,6 +59,8 @@ namespace Frozen_Flame_Server_Launcher
             Properties.Settings.Default.IP = IpNumber.Text;
             Properties.Settings.Default.IpEnabled = IpEnabled.Checked;
             Properties.Settings.Default.RconEnabled = RconEnabled.Checked;
+            Properties.Settings.Default.disabledestroyhammerEnabled = disabledestroyhammer.Checked;
+            Properties.Settings.Default.Resourcedropmultipliertext = ResourcedropmultiplierInput.Text;
             Properties.Settings.Default.Save();
         }
 
@@ -102,6 +104,8 @@ namespace Frozen_Flame_Server_Launcher
             IpNumber.Text = Properties.Settings.Default.IP;
             IpEnabled.Checked = Properties.Settings.Default.IpEnabled;
             RconEnabled.Checked = Properties.Settings.Default.RconEnabled;
+            disabledestroyhammer.Checked = Properties.Settings.Default.disabledestroyhammerEnabled;
+            ResourcedropmultiplierInput.Text = Properties.Settings.Default.Resourcedropmultipliertext;
 
 
 
@@ -156,6 +160,8 @@ namespace Frozen_Flame_Server_Launcher
             toolTip1.SetToolTip(this.MonsterDamageMultiplierText, "Enemy damage multiplier");
             toolTip1.SetToolTip(this.IPText, "Set up your Server IP here");
             toolTip1.SetToolTip(this.IpEnabled, "If this option is checked Server IP will be changed");
+            toolTip1.SetToolTip(this.disabledestroyhammer, "If this option is checked the destroy hammer is deactivated ingame");
+            toolTip1.SetToolTip(this.ResourcedropmultiplierText, "Sets a multiplier for dropped resources\ndefault 1.0");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -386,6 +392,12 @@ namespace Frozen_Flame_Server_Launcher
 
             string value27 = BuldingPlayerDMG.Checked.ToString();
             iniFile.SetValue("/Script/FrozenFlame.GameBalance", "bInvulnerableModules", value27);
+
+            string value28 = disabledestroyhammer.Checked.ToString();
+            iniFile.SetValue("/Script/FrozenFlame.GameBalance", "bDisallowToDestroyModulesWithoutOwnership", value28);
+
+            string value29 = ResourcedropmultiplierInput.Text.ToString();
+            iniFile.SetValue("/Script/FrozenFlame.GameBalance", "ResourceDropMultiplier", value29);
 
             string value11 = Flyeverywhere.Checked.ToString();
             string value12 = "True";

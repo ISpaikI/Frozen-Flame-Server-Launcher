@@ -502,5 +502,29 @@ namespace Frozen_Flame_Server_Launcher.Properties {
                 this["RconEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool disabledestroyhammerEnabled {
+            get {
+                return ((bool)(this["disabledestroyhammerEnabled"]));
+            }
+            set {
+                this["disabledestroyhammerEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0")]
+        public string Resourcedropmultipliertext {
+            get {
+                return ((string)(this["Resourcedropmultipliertext"]));
+            }
+            set {
+                this["Resourcedropmultipliertext"] = value;
+            }
+        }
     }
 }
